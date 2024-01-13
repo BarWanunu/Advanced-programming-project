@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/shaked/Documents/Advanced-programming-project/src
+CXX_INCLUDES = -I/home/bar/Desktop/Advanced-programming-project/src
 
 CXX_FLAGS = -std=gnu++14
 

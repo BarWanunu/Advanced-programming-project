@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/shaked/Documents/Advanced-programming-project/tests/calc_test.cpp" "CMakeFiles/CalcTests.dir/tests/calc_test.cpp.o" "gcc" "CMakeFiles/CalcTests.dir/tests/calc_test.cpp.o.d"
-  "/home/shaked/Documents/Advanced-programming-project/tests/test_main.cpp" "CMakeFiles/CalcTests.dir/tests/test_main.cpp.o" "gcc" "CMakeFiles/CalcTests.dir/tests/test_main.cpp.o.d"
+  "/home/bar/Desktop/Advanced-programming-project/tests/calc_test.cpp" "CMakeFiles/CalcTests.dir/tests/calc_test.cpp.o" "gcc" "CMakeFiles/CalcTests.dir/tests/calc_test.cpp.o.d"
+  "/home/bar/Desktop/Advanced-programming-project/tests/test_main.cpp" "CMakeFiles/CalcTests.dir/tests/test_main.cpp.o" "gcc" "CMakeFiles/CalcTests.dir/tests/test_main.cpp.o.d"
   )
 
 # Targets to which this target links.

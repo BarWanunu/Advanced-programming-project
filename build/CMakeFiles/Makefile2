@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shaked/Documents/Advanced-programming-project
+CMAKE_SOURCE_DIR = /home/bar/Desktop/Advanced-programming-project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shaked/Documents/Advanced-programming-project/build
+CMAKE_BINARY_DIR = /home/bar/Desktop/Advanced-programming-project/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/CalcTests.dir/clean
 CMakeFiles/CalcTests.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CalcTests.dir/build.make CMakeFiles/CalcTests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CalcTests.dir/build.make CMakeFiles/CalcTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shaked/Documents/Advanced-programming-project/build/CMakeFiles --progress-num=1,2,3 "Built target CalcTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bar/Desktop/Advanced-programming-project/build/CMakeFiles --progress-num=1,2,3 "Built target CalcTests"
 .PHONY : CMakeFiles/CalcTests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CalcTests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shaked/Documents/Advanced-programming-project/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bar/Desktop/Advanced-programming-project/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/CalcTests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shaked/Documents/Advanced-programming-project/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bar/Desktop/Advanced-programming-project/build/CMakeFiles 0
 .PHONY : CMakeFiles/CalcTests.dir/rule
 
 # Convenience name for target.

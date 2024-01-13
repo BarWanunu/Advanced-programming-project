@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shaked/Documents/Advanced-programming-project
+CMAKE_SOURCE_DIR = /home/bar/Desktop/Advanced-programming-project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shaked/Documents/Advanced-programming-project/build
+CMAKE_BINARY_DIR = /home/bar/Desktop/Advanced-programming-project/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/CalcTests.dir/depend.make
@@ -72,30 +72,30 @@ include CMakeFiles/CalcTests.dir/flags.make
 CMakeFiles/CalcTests.dir/tests/test_main.cpp.o: CMakeFiles/CalcTests.dir/flags.make
 CMakeFiles/CalcTests.dir/tests/test_main.cpp.o: ../tests/test_main.cpp
 CMakeFiles/CalcTests.dir/tests/test_main.cpp.o: CMakeFiles/CalcTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shaked/Documents/Advanced-programming-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CalcTests.dir/tests/test_main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CalcTests.dir/tests/test_main.cpp.o -MF CMakeFiles/CalcTests.dir/tests/test_main.cpp.o.d -o CMakeFiles/CalcTests.dir/tests/test_main.cpp.o -c /home/shaked/Documents/Advanced-programming-project/tests/test_main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bar/Desktop/Advanced-programming-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CalcTests.dir/tests/test_main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CalcTests.dir/tests/test_main.cpp.o -MF CMakeFiles/CalcTests.dir/tests/test_main.cpp.o.d -o CMakeFiles/CalcTests.dir/tests/test_main.cpp.o -c /home/bar/Desktop/Advanced-programming-project/tests/test_main.cpp
 
 CMakeFiles/CalcTests.dir/tests/test_main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CalcTests.dir/tests/test_main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shaked/Documents/Advanced-programming-project/tests/test_main.cpp > CMakeFiles/CalcTests.dir/tests/test_main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bar/Desktop/Advanced-programming-project/tests/test_main.cpp > CMakeFiles/CalcTests.dir/tests/test_main.cpp.i
 
 CMakeFiles/CalcTests.dir/tests/test_main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CalcTests.dir/tests/test_main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shaked/Documents/Advanced-programming-project/tests/test_main.cpp -o CMakeFiles/CalcTests.dir/tests/test_main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bar/Desktop/Advanced-programming-project/tests/test_main.cpp -o CMakeFiles/CalcTests.dir/tests/test_main.cpp.s
 
 CMakeFiles/CalcTests.dir/tests/calc_test.cpp.o: CMakeFiles/CalcTests.dir/flags.make
 CMakeFiles/CalcTests.dir/tests/calc_test.cpp.o: ../tests/calc_test.cpp
 CMakeFiles/CalcTests.dir/tests/calc_test.cpp.o: CMakeFiles/CalcTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shaked/Documents/Advanced-programming-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CalcTests.dir/tests/calc_test.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CalcTests.dir/tests/calc_test.cpp.o -MF CMakeFiles/CalcTests.dir/tests/calc_test.cpp.o.d -o CMakeFiles/CalcTests.dir/tests/calc_test.cpp.o -c /home/shaked/Documents/Advanced-programming-project/tests/calc_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bar/Desktop/Advanced-programming-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CalcTests.dir/tests/calc_test.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CalcTests.dir/tests/calc_test.cpp.o -MF CMakeFiles/CalcTests.dir/tests/calc_test.cpp.o.d -o CMakeFiles/CalcTests.dir/tests/calc_test.cpp.o -c /home/bar/Desktop/Advanced-programming-project/tests/calc_test.cpp
 
 CMakeFiles/CalcTests.dir/tests/calc_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CalcTests.dir/tests/calc_test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shaked/Documents/Advanced-programming-project/tests/calc_test.cpp > CMakeFiles/CalcTests.dir/tests/calc_test.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bar/Desktop/Advanced-programming-project/tests/calc_test.cpp > CMakeFiles/CalcTests.dir/tests/calc_test.cpp.i
 
 CMakeFiles/CalcTests.dir/tests/calc_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CalcTests.dir/tests/calc_test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shaked/Documents/Advanced-programming-project/tests/calc_test.cpp -o CMakeFiles/CalcTests.dir/tests/calc_test.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bar/Desktop/Advanced-programming-project/tests/calc_test.cpp -o CMakeFiles/CalcTests.dir/tests/calc_test.cpp.s
 
 # Object files for target CalcTests
 CalcTests_OBJECTS = \
@@ -109,7 +109,7 @@ CalcTests: CMakeFiles/CalcTests.dir/tests/test_main.cpp.o
 CalcTests: CMakeFiles/CalcTests.dir/tests/calc_test.cpp.o
 CalcTests: CMakeFiles/CalcTests.dir/build.make
 CalcTests: CMakeFiles/CalcTests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/shaked/Documents/Advanced-programming-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable CalcTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bar/Desktop/Advanced-programming-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable CalcTests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CalcTests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -121,6 +121,6 @@ CMakeFiles/CalcTests.dir/clean:
 .PHONY : CMakeFiles/CalcTests.dir/clean
 
 CMakeFiles/CalcTests.dir/depend:
-	cd /home/shaked/Documents/Advanced-programming-project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shaked/Documents/Advanced-programming-project /home/shaked/Documents/Advanced-programming-project /home/shaked/Documents/Advanced-programming-project/build /home/shaked/Documents/Advanced-programming-project/build /home/shaked/Documents/Advanced-programming-project/build/CMakeFiles/CalcTests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/bar/Desktop/Advanced-programming-project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bar/Desktop/Advanced-programming-project /home/bar/Desktop/Advanced-programming-project /home/bar/Desktop/Advanced-programming-project/build /home/bar/Desktop/Advanced-programming-project/build /home/bar/Desktop/Advanced-programming-project/build/CMakeFiles/CalcTests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/CalcTests.dir/depend
 
