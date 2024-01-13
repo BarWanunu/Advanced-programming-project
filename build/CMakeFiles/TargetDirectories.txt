@@ -1,0 +1,4 @@
+/home/shaked/Documents/Advanced-programming-project/build/CMakeFiles/CalcTests.dir
+/home/shaked/Documents/Advanced-programming-project/build/CMakeFiles/test.dir
+/home/shaked/Documents/Advanced-programming-project/build/CMakeFiles/edit_cache.dir
+/home/shaked/Documents/Advanced-programming-project/build/CMakeFiles/rebuild_cache.dir
