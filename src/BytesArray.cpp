@@ -1,5 +1,7 @@
 #include <iostream>
 
+using namespace std;
+
 class BytesArray {
     private:
      int size;
@@ -33,9 +35,9 @@ class BytesArray {
     // Function to display the elements of the array
     void display() {
         for (int i = 0; i < size; i++) {
-            std::cout << byteArr[i] << " ";
+            cout << byteArr[i] << " ";
         }
-        std::cout << std::endl;
+        cout << endl;
     }
 
 };
