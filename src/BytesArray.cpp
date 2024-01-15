@@ -40,7 +40,7 @@ class BytesArray {
 
 };
 int main() {
-    BytesArray myArray(5);
+    BytesArray myArray(8);
     myArray.display();
 	return 0;
     
