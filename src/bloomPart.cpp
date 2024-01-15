@@ -1,16 +1,16 @@
 #include <iostream> 
-using namespace std; 
 #include <sstream>
+using namespace std; 
 
 int* inputArr(){
-        int size;
+        int num;
         string line;
         getline(cin,line);
         int count = 0;
         istringstream iss(line);
         int* arr= new int[3];
-        while (iss >> size)  {
-            arr[count] = size;
+        while (iss >> num)  {
+            arr[count] = num;
             count++;
             if(count==3){
                 break;
@@ -29,7 +29,5 @@ int* inputArr(){
 int main(){
     int* arr= inputArr();
     cout << arr[0] << arr[1] <<arr[2];
-
-
     return 0;
 }
