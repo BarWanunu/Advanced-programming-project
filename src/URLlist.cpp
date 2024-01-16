@@ -28,14 +28,11 @@ class LinkedList {
     }  
 
     //insert URL adress
-    void insertAtBeginning(const string& url /*, BytesArray arr*/) {
+    void insertAtBeginning(const string& url) {
             Node* newNode = new Node(url);
             newNode->next = head;
             head = newNode;
-            /*
-            -------hash function that gives us index 1 and index 2-------
-            arr.insertURL(index 1, index 2);
-            */
+        
     }
 
     // Function to display the elements of the linked list
@@ -61,12 +58,6 @@ class LinkedList {
     }
 };
 
-int main() {
-    LinkedList myList;
-    myList.insertAtBeginning("www.example.com0" /*, arr*/);
-    myList.insertAtBeginning("www.example.com1" /*, arr*/);
-    myList.insertAtBeginning("www.example.com7" /*, arr*/);
-    myList.display();
-	return 0;
-    
+int main2(){
+    return 0;
 }
