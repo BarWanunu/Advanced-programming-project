@@ -1,7 +1,7 @@
 #include <iostream> 
 #include <sstream>
 #include <map>
-#include "Icommand.h"
+#include "ICommand.cpp"
 #include "AddURL.cpp"
 #include "CheckURL.cpp"
 #include "BytesArray.cpp"

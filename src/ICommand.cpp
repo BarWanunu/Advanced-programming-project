@@ -1,4 +1,5 @@
+
 class ICommand {
     public:
-        virtual void execute() = 0;
+    virtual void execute() = 0;
 };
