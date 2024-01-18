@@ -57,3 +57,7 @@ class URLlist {
     }
 };
 
+int main() {
+    return 0;
+}
+
