@@ -5,7 +5,7 @@
 #include "AddURL.cpp"
 #include "CheckURL.cpp"
 #include "URLlist.cpp"
-#include "HashFunction.cpp"
+//#include "HashFunction.cpp"
 
 using namespace std; 
 class BloomPart{
@@ -20,7 +20,7 @@ class BloomPart{
         int size= arr[0];
         BytesArray bArr(size);
         URLlist urls= URLlist();
-        HashFunction hashFunc= HashFunction(size, arr[1],arr[2])
+        //HashFunction hashFunc= HashFunction(size, arr[1],arr[2])
         while(true){
             getline(cin,line);
             istringstream ss(line);

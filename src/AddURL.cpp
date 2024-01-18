@@ -17,5 +17,5 @@ class AddURL:public ICommand{
 };
 
 int main() {
-    return 0;
+     ICommand* addU = new AddURL();
 }
