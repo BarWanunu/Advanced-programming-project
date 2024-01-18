@@ -15,9 +15,10 @@ int main() {
     */
     myList.insertAtBeginning("www.example.com7");
     /*----hash function that gives us index----
-    arr.changeIndex(index;
+    arr.changeIndex(index);
     */
     myList.display();
     arr.display();
+    
 	return 0;
 }

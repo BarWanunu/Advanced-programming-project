@@ -41,6 +41,3 @@ class BytesArray{
 int main(){
     return 0;
 }
-
-
-
