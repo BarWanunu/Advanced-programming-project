@@ -26,6 +26,7 @@ class BytesArray {
     void changeIndex (int index){
         if (byteArr[index] == 0){
             byteArr[index] == 1;
+        }
     }
 
     // Function to display the elements of the array
@@ -40,6 +41,3 @@ class BytesArray {
 int main1(){
     return 0;
 }
-
-
-
