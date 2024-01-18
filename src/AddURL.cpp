@@ -1,4 +1,4 @@
-#include "Icommand.h"
+#include "ICommand.cpp"
 class AddURL:public ICommand{
     public:
         void execute(){
@@ -7,3 +7,6 @@ class AddURL:public ICommand{
     }
 
 };
+int main(){
+    return 0;
+}

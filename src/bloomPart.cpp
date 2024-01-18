@@ -1,19 +1,22 @@
 #include <iostream> 
 #include <sstream>
 #include <map>
-#include "Icommand.h"
+#include "ICommand.cpp"
 #include "AddURL.cpp"
 #include "CheckURL.cpp"
+#include "BytesArray.cpp"
 using namespace std; 
 class BloomPart{
     private:
         map<string, ICommand*> commands;
     public:
-        BloomPart(map<string, ICommand*> commands) : commands(commands){}
+        BloomPart(map<string, ICommand*> commands, int size) : commands(commands){}
         void run(){
         string num;
         string url;
         string line;
+        BytesArray bArray =BytesArray(size);
+
         while(true){
             getline(cin,line);
             istringstream ss(line);
@@ -61,7 +64,7 @@ int main(){
     commands["1"]= addU;
     ICommand* checkU = new CheckURL();
     commands["2"]=checkU;
-    BloomPart* bp = new BloomPart(commands);
+    BloomPart* bp = new BloomPart(commands, arr[0]);
     bp->run();
 
     return 0;
