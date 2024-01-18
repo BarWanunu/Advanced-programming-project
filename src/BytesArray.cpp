@@ -1,45 +1,30 @@
-#include <iostream>
+#include "BytesArray.h"
 
-using namespace std;
-
-class BytesArray{
-    private:
-     int size;
-    public:
-    int *byteArr;
-    //constructor for the size of the array
-    BytesArray(int n) : size(n), byteArr(new int[n]) {
-        for (int i = 0; i < size; i++) {
-            byteArr[i] = 0;
-        }
+BytesArray::BytesArray(int n) : size(n), byteArr(new int[n]) {
+    for (int i = 0; i < size; i++) {
+        byteArr[i] = 0;
     }
+}
 
-    //check if the asked index is 1 or 0
-    bool checkIfIn(int index){
-        if (byteArr[index] == 1){
-            return true;
-        }
-        return false;
+BytesArray::~BytesArray() {
+    delete[] byteArr;
+}
+
+bool BytesArray::checkIfIn(int index) {
+    return byteArr[index] == 1;
+}
+
+void BytesArray::changeIndex(int index) {
+    if (byteArr[index] == 0) {
+        byteArr[index] = 1;
     }
+}
 
-    //change the specific byte in the array if needed (after the user entered the url)
-    void changeIndex(int index){
-        if (byteArr[index] == 0){
-            byteArr[index] == 1;
-        }
+void BytesArray::display() {
+    for (int i = 0; i < size; i++) {
+        std::cout << byteArr[i] << " ";
     }
-
-    // Function to display the elements of the array
-    void display(){
-        for (int i = 0; i < size; i++) {
-            cout << byteArr[i] << " ";
-        }
-        cout << endl;
-    }
-};
-
-int main(){
-    return 0;
+    std::cout << std::endl;
 }
 
 

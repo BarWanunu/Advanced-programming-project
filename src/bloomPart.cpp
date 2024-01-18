@@ -1,9 +1,10 @@
 #include <iostream> 
 #include <sstream>
 #include <map>
-
+#include  "BytesArray.cpp"
 #include "AddURL.cpp"
 #include "CheckURL.cpp"
+#include "URLlist.cpp"
 
 using namespace std; 
 class BloomPart{
@@ -15,7 +16,9 @@ class BloomPart{
         string num;
         string url;
         string line;
-      
+        BytesArray bArr(size);
+        URLlist urls= URLlist();
+        
         while(true){
             getline(cin,line);
             istringstream ss(line);

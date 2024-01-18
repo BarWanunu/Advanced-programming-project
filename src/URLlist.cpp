@@ -7,7 +7,6 @@ class Node {
 public :
     string urlAdress;  
     Node *next; 
-    
 
     //constructor
     Node(string url){
@@ -17,13 +16,13 @@ public :
 };
 
 // class to intialize the linked list 
-class LinkedList {  
+class URLlist {  
     private:  
     Node *head;  
     
     public:  
     //constructor
-    LinkedList() {  
+    URLlist() {  
         this->head = nullptr;  
     }  
 
@@ -58,6 +57,4 @@ class LinkedList {
     }
 };
 
-int main2(){
-    return 0;
-}
+z
