@@ -7,7 +7,7 @@ using namespace std;
 class HashFunction {
 public:
 
-  HashFunction(string key, int numHashes, int size) {
+  HashFunction(int numHashes1, int numHashes2, int size) {
     this->numHashes1 = numHashes1;
     this->numHashes2 = numHashes2;
     this->size = size;
