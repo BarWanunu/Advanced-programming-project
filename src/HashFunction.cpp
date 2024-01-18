@@ -12,17 +12,16 @@ public:
     this->numHashes = numHashes;
   }
 
-  std::vector<size_t> getHashes() {
-    std::hash<string> hashString;
-    std::vector<size_t> hashes;
+  int getHashes() {
+    hash<string> hashString;
+    hash<size_t> hashNumber;
 
     size_t hashValue = hashString(key);
 
     for (int i=1; i< numHashes; i++) {
-        size_t hashValue = hashString(key);   
+        size_t hashValue = hashNumber(hashValue);   
     }
-    hashes.push_back(hashValue%8);
-    return hashes;
+    return hashValue%8;
   }
 
   private:
