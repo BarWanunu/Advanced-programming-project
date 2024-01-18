@@ -1,4 +1,4 @@
-#include "Icommand.h"
+#include "ICommand.cpp"
 #include "BytesArray.cpp"
 #include "URLlist.cpp"
 #include "HashFunction.cpp"

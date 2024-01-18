@@ -5,20 +5,22 @@
 #include "AddURL.cpp"
 #include "CheckURL.cpp"
 #include "URLlist.cpp"
+#include "HashFunction.cpp"
 
 using namespace std; 
 class BloomPart{
     private:
         map<string, ICommand*> commands;
     public:
-        BloomPart(map<string, ICommand*> commands, int size) : commands(commands){}
+        BloomPart(map<string, ICommand*> commands, int[] arr) : commands(commands){}
         void run(){
         string num;
         string url;
         string line;
+        int size= arr[0];
         BytesArray bArr(size);
         URLlist urls= URLlist();
-        
+        HashFunction hashFunc= HashFunction(size, arr[1],arr[2])
         while(true){
             getline(cin,line);
             istringstream ss(line);
@@ -66,7 +68,7 @@ int main(){
     commands["1"]= addU;
     ICommand* checkU = new CheckURL();
     commands["2"]=checkU;
-    BloomPart* bp = new BloomPart(commands, arr[0]);
+    BloomPart* bp = new BloomPart(commands, arr);
     bp->run();
 
     return 0;
