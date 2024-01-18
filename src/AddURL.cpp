@@ -20,7 +20,3 @@ class AddURL:public ICommand{
             }   
     }
 };
-
-int main() {
-     ICommand* addU = new AddURL();
-}

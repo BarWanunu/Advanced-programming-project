@@ -18,26 +18,29 @@ public:
     vector<int> hashes;
     hash<string> hashString1;
     hash<string> hashString2;
-    hash<size_t> hashNumber;
+    hash<int> hashNumber1;
+    hash<int> hashNumber2;
 
-    size_t hashValue = hashString1(key);
+    int hashValue = hashString1(key);
 
     // first hash function
     for (int i=1; i< numHashes1; i++) {
-        size_t hashValue = hashNumber(hashValue);   
+        hashValue = hashNumber1(hashValue);   
     }
     //pushing the value modulu the size of the array
+    cout << hashValue << endl;
     hashes.push_back(hashValue%size);
 
     //second hash function
     if (numHashes2 > 0) {
       hashValue = hashString2(key);
       for (int i=1; i< numHashes2; i++) {
-        size_t hashValue = hashNumber(hashValue);   
+        hashValue = hashNumber2(hashValue);   
       }
+      //pushing the value modulu the size of the array
+      hashes.push_back(hashValue%size);
     }
-    //pushing the value modulu the size of the array
-    hashes.push_back(hashValue%size);
+   
     return hashes;
   }
 
@@ -45,6 +48,5 @@ public:
     int numHashes1;
     int numHashes2;
     int size;
-
 };
 
