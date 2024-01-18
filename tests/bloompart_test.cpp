@@ -10,41 +10,22 @@ using namespace std;
 
 // Test the constructor.
 TEST(BloomPartTest, Constructor) {
-  BloomPart bp(128, 2);
+  bloomPart bp(128, 2);
   EXPECT_EQ(128, bp.size());
   EXPECT_EQ(1, bp.numFunctions());
   EXPECT_EQ(2, bp.numHashes());
-  BloomPart bp2(256, 2, 1);
+  bloomPart bp2(256, 2, 1);
   EXPECT_EQ(256, bp2.size());
   EXPECT_EQ(2, bp2.numFunctions());
   EXPECT_EQ(3, bp2.numHashes());
 }
 
-// Test the add function.
-TEST(BloomPartTest, Adding) {
-    BloomPart bp = new BloomPart(8, 1);
-    string s = "www.example1.com";
-    bp.add(s);
-    EXPECT_EQ(bp.isBlack(s), true);
-}
-
-// Test the isBlack function.
-TEST(BloomPartTest, isBlack) {
-    BloomPart bp = new BloomPart(8, 1);
-    string s = "www.example1.com";
-    bp.add(s);
-    EXPECT_EQ(bp.isBlack(s), true);
-    EXPECT_EQ(bp.isInURL(s), true);
-    EXPECT_EQ(bp.isBlack("www.example2.com"), false);
-    EXPECT_EQ(bp.isBlack("www.example3.com"), false);
-}
-
-// Test the isInURL function.
-TEST(BloomPartTest, isInURL) {
-    BloomPart bp = new BloomPart(8, 1);
-    string s = "www.example1.com";
-    bp.add(s);
-    EXPECT_EQ(bp.isInURL(s), true);
-    EXPECT_EQ(bp.isInURL("www.example2.com"), false);
-    EXPECT_EQ(bp.isInURL("www.example3.com"), false);
+// Test the input validity.
+TEST(BloomPartTest, inputValidity) {
+    EXPECT_EQ(false, bloomPart::inputValidity(a));
+    EXPECT_EQ(false, bloomPart::inputValidity(128));
+    EXPECT_EQ(false, bloomPart::inputValidity(128 a));
+    EXPECT_EQ(true, bloomPart::inputValidity(128 1));
+    EXPECT_EQ(true, bloomPart::inputValidity(128 2 2));
+    EXPECT_EQ(false, bloomPart::inputValidity(128 2 2 1));
 }
