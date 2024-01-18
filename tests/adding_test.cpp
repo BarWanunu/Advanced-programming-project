@@ -2,7 +2,7 @@
 
 // Test the add function.
 TEST(BloomPartTest, Adding) {
-    BloomPart bp = new BloomPart(8, 1);
+    bloomPart bp = new BloomPart(8, 1);
     string s = "www.example1.com";
     bp.add(s);
     EXPECT_EQ(bp.isBlack(s), true);
@@ -10,7 +10,7 @@ TEST(BloomPartTest, Adding) {
 
 // Test the isBlack function.
 TEST(BloomPartTest, isBlack) {
-    BloomPart bp = new BloomPart(8, 1);
+    bloomPart bp = new BloomPart(8, 1);
     string s = "www.example1.com";
     bp.add(s);
     EXPECT_EQ(bp.isBlack(s), true);
@@ -21,7 +21,7 @@ TEST(BloomPartTest, isBlack) {
 
 // Test the isInURL function.
 TEST(BloomPartTest, isInURL) {
-    BloomPart bp = new BloomPart(8, 1);
+    bloomPart bp = new BloomPart(8, 1);
     string s = "www.example1.com";
     bp.add(s);
     EXPECT_EQ(bp.isInURL(s), true);
