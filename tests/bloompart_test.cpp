@@ -20,3 +20,12 @@ TEST(BloomPartTest, Constructor) {
   EXPECT_EQ(3, bp2.numHashes());
 }
 
+// Test the input validity.
+TEST(BloomPartTest, inputValidity) {
+    EXPECT_EQ(false, bloomPart::inputValidity(a));
+    EXPECT_EQ(false, bloomPart::inputValidity(128));
+    EXPECT_EQ(false, bloomPart::inputValidity(128 a));
+    EXPECT_EQ(true, bloomPart::inputValidity(128 1));
+    EXPECT_EQ(true, bloomPart::inputValidity(128 2 2));
+    EXPECT_EQ(false, bloomPart::inputValidity(128 2 2 1));
+}
