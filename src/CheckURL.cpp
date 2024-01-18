@@ -1,6 +1,6 @@
+#include "Icommand.cpp"
 #include "BytesArray.cpp"
 #include "URLlist.cpp"
-#include "Icommand.cpp"
 #include "bloomPart.cpp"
 
 using namespace std;
