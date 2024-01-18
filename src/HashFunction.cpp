@@ -7,24 +7,41 @@ using namespace std;
 class HashFunction {
 public:
 
-  HashFunction(string key, int numHashes) {
-    this->key = key;
-    this->numHashes = numHashes;
+  HashFunction(string key, int numHashes, int size) {
+    this->numHashes1 = numHashes1;
+    this->numHashes2 = numHashes2;
+    this->size = size;
   }
 
-  int getHashes() {
-    hash<string> hashString;
+  vector<int> getHashes(string key) {
+    vector<int> hashes;
+    hash<string> hashString1;
+    hash<string> hashString2;
     hash<size_t> hashNumber;
 
-    size_t hashValue = hashString(key);
+    size_t hashValue = hashString1(key);
 
-    for (int i=1; i< numHashes; i++) {
+    for (int i=1; i< numHashes1; i++) {
         size_t hashValue = hashNumber(hashValue);   
     }
-    return hashValue%8;
+    hashes.push_back(hashValue%size);
+    if (numHashes2 > 0) {
+      hashValue = hashString2(key);
+      for (int i=1; i< numHashes2; i++) {
+        size_t hashValue = hashNumber(hashValue);   
+      }
+    }
+    hashes.push_back(hashValue%size);
+    return hashes;
   }
 
   private:
-    string key;
-    int numHashes;
+    int numHashes1;
+    int numHashes2;
+    int size;
+
 };
+
+int main() {
+  return 0;
+}
