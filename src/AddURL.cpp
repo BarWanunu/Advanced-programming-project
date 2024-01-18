@@ -7,3 +7,6 @@ class AddURL:public ICommand{
     }
 
 };
+int main(){
+    return 0;
+}

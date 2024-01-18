@@ -2,7 +2,7 @@
 
 using namespace std;
 
-class BytesArray {
+class BytesArray{
     private:
      int size;
     public:
@@ -23,13 +23,14 @@ class BytesArray {
     }
 
     //change the specific byte in the array if needed (after the user entered the url)
-    void changeIndex (int index){
+    void changeIndex(int index){
         if (byteArr[index] == 0){
             byteArr[index] == 1;
+        }
     }
 
     // Function to display the elements of the array
-    void display() {
+    void display(){
         for (int i = 0; i < size; i++) {
             cout << byteArr[i] << " ";
         }
@@ -37,7 +38,7 @@ class BytesArray {
     }
 };
 
-int main1(){
+int main(){
     return 0;
 }
 
