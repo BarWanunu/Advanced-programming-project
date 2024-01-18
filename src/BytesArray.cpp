@@ -22,14 +22,10 @@ class BytesArray {
         return false;
     }
 
-    //change the bytes in the array if needed (after the user entered the url)
-    void changeIndex (int index1, int index2){
-        if (byteArr[index1] == 0){
-            byteArr[index1] == 1;
-        }
-        if (byteArr[index2] == 0 && index2!=-1){
-            byteArr[index2] == 1;
-        }
+    //change the specific byte in the array if needed (after the user entered the url)
+    void changeIndex (int index){
+        if (byteArr[index] == 0){
+            byteArr[index] == 1;
     }
 
     // Function to display the elements of the array
