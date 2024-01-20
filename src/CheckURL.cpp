@@ -1,17 +1,16 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "HashFunction.cpp"
-#include "ICommand.cpp"
-#include "BytesArray.cpp"
-#include "URLlist.cpp"
 
 using namespace std;
+#include "CheckURL.h"
 
-class CheckURL:public ICommand{
-    public :
-        CheckURL();
-        void execute(BytesArray arr, URLlist list, string url, HashFunction hash){
+
+CheckURL::CheckURL() {
+    // Constructor implementation (if any)
+}
+
+void CheckURL::execute(BytesArray arr, URLlist list, std::string url, HashFunction hash) {
             //vector of 1 or 2 insexes
             vector<int> indexVector=hash.getHashes(url);
             for (int i=0; i<indexVector.size(); i++){
@@ -27,5 +26,4 @@ class CheckURL:public ICommand{
                 }
                 cout << "false" << endl;
             }
-        }
-};
+}

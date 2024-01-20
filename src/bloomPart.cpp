@@ -1,38 +1,36 @@
 #include <iostream> 
 #include <sstream>
 #include <map>
-#include  "BytesArray.cpp"
-#include "AddURL.cpp"
-#include "CheckURL.cpp"
-#include "URLlist.cpp"
-//#include "HashFunction.cpp"
+#include  "BytesArray.h"
+#include "AddURL.h"
+#include "CheckURL.h"
+#include "URLlist.h"
+#include "HashFunction.h"
 
 using namespace std; 
 class BloomPart{
     private:
         map<string, ICommand*> commands;
+        int* arr;
     public:
-        BloomPart(map<string, ICommand*> commands, int[] arr) : commands(commands){}
+        BloomPart(map<string, ICommand*> commands, int arr[]) : commands(commands), arr(arr){}
         void run(){
-        string num;
-        string url;
-        string line;
-        int size= arr[0];
-        BytesArray bArr(size);
-        URLlist urls= URLlist();
-        //HashFunction hashFunc= HashFunction(size, arr[1],arr[2])
-        while(true){
-            getline(cin,line);
-            istringstream ss(line);
-            ss >> num >> url;
-            cout << num;
-            cout <<url;
-            commands[num]->execute();
+            string num;
+            string url;
+            string line;
+            //int size = arr[0];
+            BytesArray bArr(arr[0]);
+            URLlist urls= URLlist();
+            HashFunction hashFunc= HashFunction(arr[0], arr[1],arr[2]);
+            while(true){
+                getline(cin,line);
+                istringstream ss(line);
+                ss >> num >> url;
+                cout << num;
+                cout <<url;
+                commands[num]->execute(bArr,urls,url,hashFunc);
+            }
         }
-    
-
-}
-
         
 };
 int* inputArr(){
@@ -41,7 +39,10 @@ int* inputArr(){
         getline(cin,line);
         int count = 0;
         istringstream iss(line);
-        int* arr= new int[3];
+        int* arr=  new int[3];
+        for(int i =0;i<3;i++){
+            arr[i]=0;
+        }
         while (iss >> num)  {
             arr[count] = num;
             count++;
