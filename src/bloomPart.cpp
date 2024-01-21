@@ -38,24 +38,49 @@ int* inputArr(){
         string line;
         getline(cin,line);
         int count = 0;
+    
         istringstream iss(line);
         int* arr=  new int[3];
+        vector<int> integer_array;
+
+        // Step 3 and 4: Check if each element is an integer and add to the array
+    
+        while (iss >> num) {
+            integer_array.push_back(num);
+        }
         for(int i =0;i<3;i++){
             arr[i]=0;
         }
-        while (iss >> num)  {
-            arr[count] = num;
+        for(int i : integer_array)  {
+            arr[count] = i;
             count++;
             if(count==3){
                 break;
             }
 
         }
-        if(arr[0]==0 || arr[1]== 0){
-            cin.clear();
-            cout << "wrong input";
+        if(arr[0]==0){
+             cin.clear();
             arr= inputArr();
+
         }
+        if(arr[1]!=1){
+            if(arr[1]!=2){
+                cout << arr[0] << arr[1] <<arr[2]<<"h1";
+                cin.clear();
+                arr= inputArr();
+            }
+        }
+
+
+        if(arr[2]!=0){
+            if(arr[2]!=1&&arr[2]!=2){
+                cout << arr[0] << arr[1] <<arr[2];
+                cin.clear();
+                arr= inputArr();
+            }
+        }
+
       
         
         return arr;

@@ -19,10 +19,10 @@ void CheckURL::execute(BytesArray arr, URLlist list, std::string url, HashFuncti
                     //if the byte is 1 check if the url is in the list
                     if (list.contains(url)){
                         cout << "true true" << endl;
-                        continue;
+                        break;
                     }
                     cout << "true false" << endl;
-                    continue;
+                    break;
                 }
                 cout << "false" << endl;
             }
