@@ -8,13 +8,14 @@ BytesArray::BytesArray(int n) : size(n), byteArr(new int[n]) {
     }
 }
 
-// Destructor implementation
-BytesArray::~BytesArray() {
-    delete[] byteArr;
-}
+//// Destructor implementation
+//BytesArray::~BytesArray() {
+//    delete[] byteArr;
+//}
 
 bool BytesArray::checkIfIn(int index) {
-    return byteArr[index] == 1;
+    bool x = byteArr[index] == 1;
+    return x;
 }
 
 void BytesArray::changeIndex(int index) {

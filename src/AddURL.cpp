@@ -7,9 +7,10 @@ AddURL::AddURL() {
 }
 
 // Member function implementation
-void AddURL::execute(BytesArray arr, URLlist list, std::string url, HashFunction hash) {
+void AddURL::execute(BytesArray arr, URLlist* list, std::string url,
+                     HashFunction hash) {
     // insert the url to the url list
-    list.insertAtBeginning(url);
+    list->insertAtBeginning(url);
 
     // receiving a vector that contains the address of bytes we need to change
     std::vector<int> hashes = hash.getHashes(url);

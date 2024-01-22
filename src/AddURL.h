@@ -13,7 +13,8 @@ public:
     AddURL();
 
     // Member function declaration
-    void execute(BytesArray arr, URLlist list, std::string url, HashFunction hash);
+    void execute(BytesArray arr, URLlist* list, std::string url, HashFunction
+    hash);
 };
 
 #endif // ADDURL_H

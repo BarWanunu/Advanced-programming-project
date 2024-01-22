@@ -8,7 +8,8 @@
 
 class ICommand {
 public:
-    virtual void execute(BytesArray arr, URLlist list, std::string url, HashFunction hash) = 0;
+    virtual void execute(BytesArray arr, URLlist* list, std::string url,
+                         HashFunction hash) = 0;
 };
 
 #endif // ICOMMAND_H

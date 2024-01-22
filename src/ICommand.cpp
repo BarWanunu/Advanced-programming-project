@@ -1,9 +1,12 @@
-#ifndef ICOMMAND_H
-#define ICOMMAND_H
+
 
 #include "ICommand.h"
+#include "URLlist.h"
+#include "HashFunction.h"
+#include "BytesArray.h"
 
-using namespace std; 
+using namespace std;
 
-void ICommand::execute(BytesArray arr, URLlist list, std::string url, HashFunction hash) {
-#endif // ICOMMAND_H
+void ICommand::execute(BytesArray arr, URLlist* list, std::string url,
+                       HashFunction hash) {
+}
