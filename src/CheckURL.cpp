@@ -1,10 +1,9 @@
 #include <iostream>
 #include <string>
 #include <vector>
-
-using namespace std;
 #include "CheckURL.h"
 
+using namespace std;
 
 CheckURL::CheckURL() {
     // Constructor implementation (if any)

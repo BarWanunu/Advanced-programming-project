@@ -1,5 +1,3 @@
-
-
 #include "ICommand.h"
 #include "URLlist.h"
 #include "HashFunction.h"

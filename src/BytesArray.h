@@ -8,7 +8,6 @@ private:
 
 public:
     BytesArray(int n);  // Constructor declaration
-//    ~BytesArray();      // Destructor declaration
     bool checkIfIn(int index);
     void changeIndex(int index);
     void display();
