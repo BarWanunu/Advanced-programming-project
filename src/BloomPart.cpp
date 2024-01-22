@@ -1,7 +1,7 @@
 #include <iostream>
 #include <sstream>
 #include <map>
-#include  "BytesArray.h"
+#include "BytesArray.h"
 #include "AddURL.h"
 #include "CheckURL.h"
 #include "URLlist.h"

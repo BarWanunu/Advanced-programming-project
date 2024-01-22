@@ -4,7 +4,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "../src/bloomPart.cpp"
+#include "../src/BloomPart.cpp"
 using namespace std;
 
 // Test the constructor.
