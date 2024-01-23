@@ -3,6 +3,7 @@
 #include "BytesArray.h"
 #include "HashFunction.h"
 #include "URLlist.h"
+#include "ICommand.h"
 
 
 class BloomPart{
