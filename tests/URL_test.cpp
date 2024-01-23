@@ -1,10 +1,11 @@
 // TDD for the adding part
 
 #include <gtest/gtest.h>
-#include "AddURL.h"
-#include "BytesArray.h"
-#include "HashFunction.h"
-#include "URLlist.h"
+#include "AddURL.cpp"
+#include "BytesArray.cpp"
+#include "HashFunction.cpp"
+#include "URLlist.cpp"
+#include "Node.cpp"
 
 using namespace std;
 

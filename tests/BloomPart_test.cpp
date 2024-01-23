@@ -3,9 +3,9 @@
 #include <gtest/gtest.h>
 #include <string>
 #include <vector>
-#include "../src/BloomPart.h"
-#include "../src/CheckURL.h"
-#include "../src/AddURL.h"
+#include "BloomPart.cpp"
+#include "CheckURL.cpp"
+#include "AddURL.cpp"
 
 using namespace std;
 
