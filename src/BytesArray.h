@@ -11,6 +11,7 @@ public:
     bool checkIfIn(int index);
     void changeIndex(int index);
     void display();
+
 };
 
 #endif // BYTESARRAY_H
