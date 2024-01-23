@@ -12,16 +12,40 @@ enable_testing()
 set(SOURCE_FILES
 src/calc.cpp # this is where the code we want to test
 )
-set(TEST_FILES
+set(TEST_FILES1
 tests/test_main.cpp # this is the main for tests
         tests/URL_test.cpp # this file contain the tests
-        tests/BloomPart_test.cpp # this file contain the tests
-        tests/HashFunction_test.cpp #this file contain the tests
 )
-add_executable(CalcTests ${TEST_FILES})
+
+add_executable(UrlTest $(TEST_FILES1))
 # Link Google Test to the test executable
-target_link_libraries(CalcTests PRIVATE gtest gtest_main)
+target_link_libraries(UrlTest PRIVATE gtest gtest_main)
 # Include the source directory for tests
-target_include_directories(CalcTests PRIVATE src)
+target_include_directories(UrlTest PRIVATE src)
+
+set(TEST_FILES2
+        tests/test_main.cpp # this is the main for tests
+        tests/BloomPart_test.cpp # this file contain the tests
+)
+
+add_executable(BloomPartTest $(TEST_FILES1))
+# Link Google Test to the test executable
+target_link_libraries(BloomPartTest PRIVATE gtest gtest_main)
+# Include the source directory for tests
+target_include_directories(BloomPartTest PRIVATE src)
+
+set(TEST_FILES3
+            tests/test_main.cpp # this is the main for tests
+        tests/HashFunction_test.cpp # this file contain the tests
+)
+
+add_executable(HashFunctionTest $(TEST_FILES1))
+# Link Google Test to the test executable
+target_link_libraries(HashFunctionTest PRIVATE gtest gtest_main)
+# Include the source directory for tests
+target_include_directories(HashFunctionTest PRIVATE src)
+
 include(GoogleTest)
-add_test(NAME CalcTests COMMAND CalcTests)
+add_test(NAME UrlTest COMMAND UrlTest)
+add_test(NAME BloomPartTest COMMAND BloomPartTest)
+add_test(NAME HashFunctionTest COMMAND HashFunctionTest)
