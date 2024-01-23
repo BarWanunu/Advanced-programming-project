@@ -17,7 +17,7 @@ tests/test_main.cpp # this is the main for tests
         tests/URL_test.cpp # this file contain the tests
 )
 
-add_executable(UrlTest $(TEST_FILES1))
+add_executable(UrlTest ${TEST_FILES1})
 # Link Google Test to the test executable
 target_link_libraries(UrlTest PRIVATE gtest gtest_main)
 # Include the source directory for tests
@@ -28,7 +28,7 @@ set(TEST_FILES2
         tests/BloomPart_test.cpp # this file contain the tests
 )
 
-add_executable(BloomPartTest $(TEST_FILES1))
+add_executable(BloomPartTest ${TEST_FILES2})
 # Link Google Test to the test executable
 target_link_libraries(BloomPartTest PRIVATE gtest gtest_main)
 # Include the source directory for tests
@@ -39,7 +39,7 @@ set(TEST_FILES3
         tests/HashFunction_test.cpp # this file contain the tests
 )
 
-add_executable(HashFunctionTest $(TEST_FILES1))
+add_executable(HashFunctionTest ${TEST_FILES3})
 # Link Google Test to the test executable
 target_link_libraries(HashFunctionTest PRIVATE gtest gtest_main)
 # Include the source directory for tests
