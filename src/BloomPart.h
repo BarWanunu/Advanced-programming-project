@@ -20,6 +20,7 @@ public:
     void add(string url);
     int numhashes();
     int numfunctions();
+    int size();
 };
 
 #endif // BLOOMPART_H

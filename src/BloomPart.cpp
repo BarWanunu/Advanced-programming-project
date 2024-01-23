@@ -48,3 +48,6 @@ int BloomPart::numfunctions(){
     }
     return 2;
 }
+int BloomPart::size(){
+    return arr[0];
+}
