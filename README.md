@@ -1,5 +1,14 @@
 # Advanced-programming-project
+
+How to compile and run:
+cd src
+g++ -o myprogram ./main.cpp ./BloomPart.cpp ./AddURL.cpp ./CheckURL.cpp ./BytesArray.cpp ./URLlist.cpp ./HashFunction.cpp ./Node.cpp
+./myprogram
+
+
+
 The project
+
 
 Missions : 
 1. First input. checing the validity of the input.
