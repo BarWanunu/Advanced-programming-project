@@ -55,5 +55,5 @@ target_include_directories(HashFunctionTest PRIVATE src)
 
 include(GoogleTest)
 add_test(NAME UrlTest COMMAND UrlTest)
-# add_test(NAME BloomPartTest COMMAND BloomPartTest)
+add_test(NAME BloomPartTest COMMAND BloomPartTest)
 add_test(NAME HashFunctionTest COMMAND HashFunctionTest)

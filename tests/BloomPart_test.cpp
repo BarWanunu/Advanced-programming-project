@@ -3,9 +3,16 @@
 #include <gtest/gtest.h>
 #include <string>
 #include <vector>
+#include <map>
+#include <sstream>
 #include "BloomPart.cpp"
-#include "CheckURL.cpp"
 #include "AddURL.cpp"
+#include "CheckURL.cpp"
+#include "HashFunction.cpp"
+#include "URLlist.cpp"
+#include "Node.cpp"
+#include "BytesArray.cpp"
+#include "ICommand.cpp"
 
 using namespace std;
 
