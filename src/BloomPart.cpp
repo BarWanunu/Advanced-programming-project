@@ -10,20 +10,44 @@
 
 using namespace std;
 
-BloomPart::BloomPart(map<string, ICommand*> commands, int arr[]) : commands(commands), arr(arr){}
+BloomPart::BloomPart(map<string, ICommand*> commands, int arr[])
+        : commands(commands), arr(arr), bArr(arr[0]), hashFunc(arr[0], arr[1], arr[2]), urls(){}
 
 void BloomPart::run(){
     string num;
     string url;
     string line;
     //int size = arr[0];
-    BytesArray bArr(arr[0]);
-    URLlist urls= URLlist();
-    HashFunction hashFunc= HashFunction(arr[0], arr[1],arr[2]);
+
     while(true){
+
         getline(cin,line);
         istringstream ss(line);
         ss >> num >> url;
+        if(num=="1"||num=="2"){
             commands[num]->execute(bArr,&urls,url,hashFunc);
+
+        }
     }
+}
+
+void BloomPart::check(string url)
+{
+    commands["2"]->execute(bArr,&urls,std::move(url),hashFunc);
+}
+void BloomPart::add(string url)
+{
+    commands["1"]->execute(bArr,&urls,std::move(url),hashFunc);
+}
+int BloomPart::numhashes(){
+    return arr[1]+arr[2];
+}
+int BloomPart::numfunctions(){
+    if(arr[2]==0){
+        return 1;
+    }
+    return 2;
+}
+int BloomPart::size(){
+    return arr[0];
 }
