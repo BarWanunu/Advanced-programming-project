@@ -14,7 +14,9 @@ src/calc.cpp # this is where the code we want to test
 )
 set(TEST_FILES
 tests/test_main.cpp # this is the main for tests
-tests/calc_test.cpp # this file contain the tests
+        tests/AddURL_test.cpp # this file contain the tests
+tests/bloompart_test.cpp
+        tests/CheckURL_test.cpp # this file contain the tests
 )
 add_executable(CalcTests ${TEST_FILES})
 # Link Google Test to the test executable
