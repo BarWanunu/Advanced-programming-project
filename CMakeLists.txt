@@ -9,8 +9,15 @@ URL
 https://github.com/google/googletest/archive/03597a01ee50ed33e9dfd640b249b4be3799d395.zip
 )
 enable_testing()
+# this is where the code we want to test
 set(SOURCE_FILES
-src/calc.cpp # this is where the code we want to test
+src/AddURL.cpp 
+src/BloomPart.cpp
+src/BytesArray.cpp 
+src/CheckURL.cpp 
+src/HashFunction.cpp
+src/ICommand.cpp 
+src/URLList.cpp
 )
 set(TEST_FILES1
 tests/test_main.cpp # this is the main for tests
