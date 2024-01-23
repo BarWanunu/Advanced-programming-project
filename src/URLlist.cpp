@@ -34,5 +34,3 @@ bool URLlist::contains(const string& url){
     }
     return false;
 }
-
-

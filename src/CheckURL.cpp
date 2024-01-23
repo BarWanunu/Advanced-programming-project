@@ -1,9 +1,9 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include "CheckURL.h"
 
 using namespace std;
-#include "CheckURL.h"
 
 
 CheckURL::CheckURL() {
@@ -17,7 +17,7 @@ void CheckURL::execute(BytesArray arr, URLlist* list, std::string url,
     for (int i=0; i<indexVector.size(); i++){
         //check if the byte is 1
         if (arr.checkIfIn(indexVector[i])){
-            if (i == 0) {
+            if (i == 0 && indexVector.size() != 1) {
                 continue;
             }
             //if the byte is 1 check if the url is in the list
