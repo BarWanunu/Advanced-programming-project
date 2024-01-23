@@ -1,4 +1,4 @@
-]// TDD testing for bloom part
+// TDD testing for bloom part
 
 #include <gtest/gtest.h>
 #include <string>
@@ -22,16 +22,16 @@ TEST(BloomPartTest, Constructor) {
     arr[1] = 2;
     arr[2] = 0;
     BloomPart* bp = new BloomPart(commands, arr);
-    EXPECT_EQ(128, bp.size());
-    EXPECT_EQ(1, bp.numFunctions());
-    EXPECT_EQ(2, bp.numHashes());
+    EXPECT_EQ(128, bp->size());
+    EXPECT_EQ(1, bp->numfunctions());
+    EXPECT_EQ(2, bp->numhashes());
     arr[0] = 256;
     arr[1] = 2;
     arr[2] = 1;
     BloomPart* bp2 = new BloomPart(commands,arr);
-    EXPECT_EQ(256, bp2.size());
-    EXPECT_EQ(2, bp2.numFunctions());
-    EXPECT_EQ(3, bp2.numHashes());
+    EXPECT_EQ(256, bp2->size());
+    EXPECT_EQ(2, bp2->numfunctions());
+    EXPECT_EQ(3, bp2->numhashes());
     delete[] arr;
     delete bp2;
     delete bp;
