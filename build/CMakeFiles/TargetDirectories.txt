@@ -1,4 +1,6 @@
-/home/bar/Desktop/Advanced-programming-project/build/CMakeFiles/CalcTests.dir
+/home/bar/Desktop/Advanced-programming-project/build/CMakeFiles/UrlTest.dir
+/home/bar/Desktop/Advanced-programming-project/build/CMakeFiles/BloomPartTest.dir
+/home/bar/Desktop/Advanced-programming-project/build/CMakeFiles/HashFunctionTest.dir
 /home/bar/Desktop/Advanced-programming-project/build/CMakeFiles/test.dir
 /home/bar/Desktop/Advanced-programming-project/build/CMakeFiles/edit_cache.dir
 /home/bar/Desktop/Advanced-programming-project/build/CMakeFiles/rebuild_cache.dir

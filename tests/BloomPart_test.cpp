@@ -32,7 +32,7 @@ TEST(BloomPartTest, Constructor) {
     EXPECT_EQ(256, bp2->size());
     EXPECT_EQ(2, bp2->numfunctions());
     EXPECT_EQ(3, bp2->numhashes());
-    delete[] arr;
     delete bp2;
     delete bp;
+    delete[] arr;
 }

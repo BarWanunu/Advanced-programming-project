@@ -127,48 +127,124 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named CalcTests
+# Target rules for targets named UrlTest
 
 # Build rule for target.
-CalcTests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CalcTests
-.PHONY : CalcTests
+UrlTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 UrlTest
+.PHONY : UrlTest
 
 # fast build rule for target.
-CalcTests/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CalcTests.dir/build.make CMakeFiles/CalcTests.dir/build
-.PHONY : CalcTests/fast
+UrlTest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UrlTest.dir/build.make CMakeFiles/UrlTest.dir/build
+.PHONY : UrlTest/fast
 
-tests/calc_test.o: tests/calc_test.cpp.o
-.PHONY : tests/calc_test.o
+#=============================================================================
+# Target rules for targets named BloomPartTest
+
+# Build rule for target.
+BloomPartTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BloomPartTest
+.PHONY : BloomPartTest
+
+# fast build rule for target.
+BloomPartTest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BloomPartTest.dir/build.make CMakeFiles/BloomPartTest.dir/build
+.PHONY : BloomPartTest/fast
+
+#=============================================================================
+# Target rules for targets named HashFunctionTest
+
+# Build rule for target.
+HashFunctionTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HashFunctionTest
+.PHONY : HashFunctionTest
+
+# fast build rule for target.
+HashFunctionTest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashFunctionTest.dir/build.make CMakeFiles/HashFunctionTest.dir/build
+.PHONY : HashFunctionTest/fast
+
+tests/BloomPart_test.o: tests/BloomPart_test.cpp.o
+.PHONY : tests/BloomPart_test.o
 
 # target to build an object file
-tests/calc_test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CalcTests.dir/build.make CMakeFiles/CalcTests.dir/tests/calc_test.cpp.o
-.PHONY : tests/calc_test.cpp.o
+tests/BloomPart_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BloomPartTest.dir/build.make CMakeFiles/BloomPartTest.dir/tests/BloomPart_test.cpp.o
+.PHONY : tests/BloomPart_test.cpp.o
 
-tests/calc_test.i: tests/calc_test.cpp.i
-.PHONY : tests/calc_test.i
+tests/BloomPart_test.i: tests/BloomPart_test.cpp.i
+.PHONY : tests/BloomPart_test.i
 
 # target to preprocess a source file
-tests/calc_test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CalcTests.dir/build.make CMakeFiles/CalcTests.dir/tests/calc_test.cpp.i
-.PHONY : tests/calc_test.cpp.i
+tests/BloomPart_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BloomPartTest.dir/build.make CMakeFiles/BloomPartTest.dir/tests/BloomPart_test.cpp.i
+.PHONY : tests/BloomPart_test.cpp.i
 
-tests/calc_test.s: tests/calc_test.cpp.s
-.PHONY : tests/calc_test.s
+tests/BloomPart_test.s: tests/BloomPart_test.cpp.s
+.PHONY : tests/BloomPart_test.s
 
 # target to generate assembly for a file
-tests/calc_test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CalcTests.dir/build.make CMakeFiles/CalcTests.dir/tests/calc_test.cpp.s
-.PHONY : tests/calc_test.cpp.s
+tests/BloomPart_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BloomPartTest.dir/build.make CMakeFiles/BloomPartTest.dir/tests/BloomPart_test.cpp.s
+.PHONY : tests/BloomPart_test.cpp.s
+
+tests/HashFunction_test.o: tests/HashFunction_test.cpp.o
+.PHONY : tests/HashFunction_test.o
+
+# target to build an object file
+tests/HashFunction_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashFunctionTest.dir/build.make CMakeFiles/HashFunctionTest.dir/tests/HashFunction_test.cpp.o
+.PHONY : tests/HashFunction_test.cpp.o
+
+tests/HashFunction_test.i: tests/HashFunction_test.cpp.i
+.PHONY : tests/HashFunction_test.i
+
+# target to preprocess a source file
+tests/HashFunction_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashFunctionTest.dir/build.make CMakeFiles/HashFunctionTest.dir/tests/HashFunction_test.cpp.i
+.PHONY : tests/HashFunction_test.cpp.i
+
+tests/HashFunction_test.s: tests/HashFunction_test.cpp.s
+.PHONY : tests/HashFunction_test.s
+
+# target to generate assembly for a file
+tests/HashFunction_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashFunctionTest.dir/build.make CMakeFiles/HashFunctionTest.dir/tests/HashFunction_test.cpp.s
+.PHONY : tests/HashFunction_test.cpp.s
+
+tests/URL_test.o: tests/URL_test.cpp.o
+.PHONY : tests/URL_test.o
+
+# target to build an object file
+tests/URL_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UrlTest.dir/build.make CMakeFiles/UrlTest.dir/tests/URL_test.cpp.o
+.PHONY : tests/URL_test.cpp.o
+
+tests/URL_test.i: tests/URL_test.cpp.i
+.PHONY : tests/URL_test.i
+
+# target to preprocess a source file
+tests/URL_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UrlTest.dir/build.make CMakeFiles/UrlTest.dir/tests/URL_test.cpp.i
+.PHONY : tests/URL_test.cpp.i
+
+tests/URL_test.s: tests/URL_test.cpp.s
+.PHONY : tests/URL_test.s
+
+# target to generate assembly for a file
+tests/URL_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UrlTest.dir/build.make CMakeFiles/UrlTest.dir/tests/URL_test.cpp.s
+.PHONY : tests/URL_test.cpp.s
 
 tests/test_main.o: tests/test_main.cpp.o
 .PHONY : tests/test_main.o
 
 # target to build an object file
 tests/test_main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CalcTests.dir/build.make CMakeFiles/CalcTests.dir/tests/test_main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UrlTest.dir/build.make CMakeFiles/UrlTest.dir/tests/test_main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BloomPartTest.dir/build.make CMakeFiles/BloomPartTest.dir/tests/test_main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashFunctionTest.dir/build.make CMakeFiles/HashFunctionTest.dir/tests/test_main.cpp.o
 .PHONY : tests/test_main.cpp.o
 
 tests/test_main.i: tests/test_main.cpp.i
@@ -176,7 +252,9 @@ tests/test_main.i: tests/test_main.cpp.i
 
 # target to preprocess a source file
 tests/test_main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CalcTests.dir/build.make CMakeFiles/CalcTests.dir/tests/test_main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UrlTest.dir/build.make CMakeFiles/UrlTest.dir/tests/test_main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BloomPartTest.dir/build.make CMakeFiles/BloomPartTest.dir/tests/test_main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashFunctionTest.dir/build.make CMakeFiles/HashFunctionTest.dir/tests/test_main.cpp.i
 .PHONY : tests/test_main.cpp.i
 
 tests/test_main.s: tests/test_main.cpp.s
@@ -184,7 +262,9 @@ tests/test_main.s: tests/test_main.cpp.s
 
 # target to generate assembly for a file
 tests/test_main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CalcTests.dir/build.make CMakeFiles/CalcTests.dir/tests/test_main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UrlTest.dir/build.make CMakeFiles/UrlTest.dir/tests/test_main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BloomPartTest.dir/build.make CMakeFiles/BloomPartTest.dir/tests/test_main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashFunctionTest.dir/build.make CMakeFiles/HashFunctionTest.dir/tests/test_main.cpp.s
 .PHONY : tests/test_main.cpp.s
 
 # Help Target
@@ -196,10 +276,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... CalcTests"
-	@echo "... tests/calc_test.o"
-	@echo "... tests/calc_test.i"
-	@echo "... tests/calc_test.s"
+	@echo "... BloomPartTest"
+	@echo "... HashFunctionTest"
+	@echo "... UrlTest"
+	@echo "... tests/BloomPart_test.o"
+	@echo "... tests/BloomPart_test.i"
+	@echo "... tests/BloomPart_test.s"
+	@echo "... tests/HashFunction_test.o"
+	@echo "... tests/HashFunction_test.i"
+	@echo "... tests/HashFunction_test.s"
+	@echo "... tests/URL_test.o"
+	@echo "... tests/URL_test.i"
+	@echo "... tests/URL_test.s"
 	@echo "... tests/test_main.o"
 	@echo "... tests/test_main.i"
 	@echo "... tests/test_main.s"

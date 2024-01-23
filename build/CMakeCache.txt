@@ -15,6 +15,15 @@
 ########################
 
 //Value Computed by CMake
+ Advanced-programming-project_BINARY_DIR:STATIC=/home/bar/Desktop/Advanced-programming-project/build
+
+//Value Computed by CMake
+ Advanced-programming-project_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+ Advanced-programming-project_SOURCE_DIR:STATIC=/home/bar/Desktop/Advanced-programming-project
+
+//Value Computed by CMake
 Advanced-programming-project_BINARY_DIR:STATIC=/home/bar/Desktop/Advanced-programming-project/build
 
 //Value Computed by CMake
@@ -154,7 +163,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=MyCalc
+CMAKE_PROJECT_NAME:STATIC=Advanced-programming-project
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib

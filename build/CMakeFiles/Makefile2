@@ -63,7 +63,9 @@ CMAKE_BINARY_DIR = /home/bar/Desktop/Advanced-programming-project/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/CalcTests.dir/all
+all: CMakeFiles/UrlTest.dir/all
+all: CMakeFiles/BloomPartTest.dir/all
+all: CMakeFiles/HashFunctionTest.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +73,88 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/CalcTests.dir/clean
+clean: CMakeFiles/UrlTest.dir/clean
+clean: CMakeFiles/BloomPartTest.dir/clean
+clean: CMakeFiles/HashFunctionTest.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/CalcTests.dir
+# Target rules for target CMakeFiles/UrlTest.dir
 
 # All Build rule for target.
-CMakeFiles/CalcTests.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CalcTests.dir/build.make CMakeFiles/CalcTests.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CalcTests.dir/build.make CMakeFiles/CalcTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bar/Desktop/Advanced-programming-project/build/CMakeFiles --progress-num=1,2,3 "Built target CalcTests"
-.PHONY : CMakeFiles/CalcTests.dir/all
+CMakeFiles/UrlTest.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UrlTest.dir/build.make CMakeFiles/UrlTest.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UrlTest.dir/build.make CMakeFiles/UrlTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bar/Desktop/Advanced-programming-project/build/CMakeFiles --progress-num=7,8,9 "Built target UrlTest"
+.PHONY : CMakeFiles/UrlTest.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/CalcTests.dir/rule: cmake_check_build_system
+CMakeFiles/UrlTest.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bar/Desktop/Advanced-programming-project/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/CalcTests.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/UrlTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bar/Desktop/Advanced-programming-project/build/CMakeFiles 0
-.PHONY : CMakeFiles/CalcTests.dir/rule
+.PHONY : CMakeFiles/UrlTest.dir/rule
 
 # Convenience name for target.
-CalcTests: CMakeFiles/CalcTests.dir/rule
-.PHONY : CalcTests
+UrlTest: CMakeFiles/UrlTest.dir/rule
+.PHONY : UrlTest
 
 # clean rule for target.
-CMakeFiles/CalcTests.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CalcTests.dir/build.make CMakeFiles/CalcTests.dir/clean
-.PHONY : CMakeFiles/CalcTests.dir/clean
+CMakeFiles/UrlTest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UrlTest.dir/build.make CMakeFiles/UrlTest.dir/clean
+.PHONY : CMakeFiles/UrlTest.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/BloomPartTest.dir
+
+# All Build rule for target.
+CMakeFiles/BloomPartTest.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BloomPartTest.dir/build.make CMakeFiles/BloomPartTest.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BloomPartTest.dir/build.make CMakeFiles/BloomPartTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bar/Desktop/Advanced-programming-project/build/CMakeFiles --progress-num=1,2,3 "Built target BloomPartTest"
+.PHONY : CMakeFiles/BloomPartTest.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/BloomPartTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bar/Desktop/Advanced-programming-project/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/BloomPartTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bar/Desktop/Advanced-programming-project/build/CMakeFiles 0
+.PHONY : CMakeFiles/BloomPartTest.dir/rule
+
+# Convenience name for target.
+BloomPartTest: CMakeFiles/BloomPartTest.dir/rule
+.PHONY : BloomPartTest
+
+# clean rule for target.
+CMakeFiles/BloomPartTest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BloomPartTest.dir/build.make CMakeFiles/BloomPartTest.dir/clean
+.PHONY : CMakeFiles/BloomPartTest.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/HashFunctionTest.dir
+
+# All Build rule for target.
+CMakeFiles/HashFunctionTest.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashFunctionTest.dir/build.make CMakeFiles/HashFunctionTest.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashFunctionTest.dir/build.make CMakeFiles/HashFunctionTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bar/Desktop/Advanced-programming-project/build/CMakeFiles --progress-num=4,5,6 "Built target HashFunctionTest"
+.PHONY : CMakeFiles/HashFunctionTest.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/HashFunctionTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bar/Desktop/Advanced-programming-project/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/HashFunctionTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bar/Desktop/Advanced-programming-project/build/CMakeFiles 0
+.PHONY : CMakeFiles/HashFunctionTest.dir/rule
+
+# Convenience name for target.
+HashFunctionTest: CMakeFiles/HashFunctionTest.dir/rule
+.PHONY : HashFunctionTest
+
+# clean rule for target.
+CMakeFiles/HashFunctionTest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HashFunctionTest.dir/build.make CMakeFiles/HashFunctionTest.dir/clean
+.PHONY : CMakeFiles/HashFunctionTest.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

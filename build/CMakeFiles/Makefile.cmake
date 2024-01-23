@@ -24,7 +24,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake"
   "/usr/share/cmake-3.22/Modules/Compiler/GNU.cmake"
   "/usr/share/cmake-3.22/Modules/FetchContent.cmake"
-  "/usr/share/cmake-3.22/Modules/GoogleTest.cmake"
   "/usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake"
   "/usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake"
   "/usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake"
@@ -45,5 +44,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/CalcTests.dir/DependInfo.cmake"
+  "CMakeFiles/UrlTest.dir/DependInfo.cmake"
+  "CMakeFiles/BloomPartTest.dir/DependInfo.cmake"
+  "CMakeFiles/HashFunctionTest.dir/DependInfo.cmake"
   )
