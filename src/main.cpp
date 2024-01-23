@@ -81,14 +81,19 @@ int* inputArr(){
     return arr;
 }
 
-
-int main(){
-    int* arr= inputArr();
+map<string, ICommand*> inputCommands(){
     map<string, ICommand*> commands;
     ICommand* addU = new AddURL();
     commands["1"]= addU;
     ICommand* checkU = new CheckURL();
     commands["2"]=checkU;
+    return commands;
+}
+
+
+int main(){
+    int* arr = inputArr();
+    map<string, ICommand*> commands = inputCommands();
     BloomPart* bp = new BloomPart(commands, arr);
     bp->run();
 
