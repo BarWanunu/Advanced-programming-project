@@ -24,5 +24,10 @@ int main(){
     BloomPart* bp = new BloomPart(commands, arr);
     bp->run();
 
+    delete inputArr;
+    delete bp;
+
+    delete[] arr;
+
     return 0;
 }
