@@ -2,12 +2,13 @@
 
 # How to compile and run our program:
 
-download our Advanced-programming-project folder
-put the next commands in that folder on termianl:
-1. cd src
-2. g++ -o myprogram ./main.cpp ./InputArr.cpp ./BloomPart.cpp ./AddURL.cpp ./CheckURL.cpp ./BytesArray.cpp ./URLlist.cpp ./HashFunction.cpp ./Node.cpp
-3. ./myprogram
-our program is now run on your computer!
+1. download our Advanced-programming-project folder
+2. put the next commands in that folder on termianl:
+3. cd src
+4. g++ -o myprogram ./main.cpp ./InputArr.cpp ./BloomPart.cpp ./AddURL.cpp ./CheckURL.cpp ./BytesArray.cpp ./URLlist.cpp ./HashFunction.cpp ./Node.cpp
+5. ./myprogram
+6. our program is now run on your computer!
+
 
 
 # our workflow
