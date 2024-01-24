@@ -15,8 +15,10 @@ jobs:
     - uses: actions/checkout@v3
     - name: setup c++
       run: sudo apt-get install libgtest-dev cmake
-    - name: test with c++
+    - name: create build
       run: cmake -B build -S .
-          cmake --build build
-          ctest --test-dir build --output-on-failure
+    - name: create build 2
+      run: cmake --build build
+    - name: run build
+      run: ctest --test-dir build --output-on-failure
           
