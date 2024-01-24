@@ -15,7 +15,7 @@
 
 At first we divided the missions between us and updated it in the Jira. <br>
 By using the refactor principle we created the ICommand class and created both AddURL and CheckURL that implement it. <br>
-Each one of them has its own execute function to do ehat it needs when the user input 1 or 2. <br>
+Each one of them has its own execute function that their implement as required. <br>
 We created the tests for the program and by them we built the classes with different and specific roles for each class. <br>
 After that we mereged everything and compiled it all together and started to run the program by checking basic and edge cases. <br>
 When everything worked as we expected we upload our program to dockerhub and checked that it worked after we downloaded it from there.
