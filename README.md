@@ -13,4 +13,7 @@
 
 # Our workflow
 
-At first we divided the missions between us and updated it in the Jira, we created the tests for the program and by them we built the classes with different and specific roles for each class. After that we mereged everything and compiled it all together and started to run the program by checking basic and edge cases. When everything worked as we expected we upload our program to dockerhub and checked that it worked after we downloaded it from there.
+At first we divided the missions between us and updated it in the Jira.
+We created the tests for the program and by them we built the classes with different and specific roles for each class.
+After that we mereged everything and compiled it all together and started to run the program by checking basic and edge cases.
+When everything worked as we expected we upload our program to dockerhub and checked that it worked after we downloaded it from there.
