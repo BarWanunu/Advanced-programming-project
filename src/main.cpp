@@ -17,6 +17,7 @@ map<string, ICommand*> inputCommands(){
     return commands;
 }
 
+
 int main(){
     InputArr* inputArr = new InputArr();
     int* arr = inputArr->inputCheck();
