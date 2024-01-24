@@ -2,7 +2,7 @@
 
 How to compile and run:
 cd src
-g++ -o myprogram ./main.cpp ./BloomPart.cpp ./AddURL.cpp ./CheckURL.cpp ./BytesArray.cpp ./URLlist.cpp ./HashFunction.cpp ./Node.cpp
+g++ -o myprogram ./main.cpp ./InputArr.cpp ./BloomPart.cpp ./AddURL.cpp ./CheckURL.cpp ./BytesArray.cpp ./URLlist.cpp ./HashFunction.cpp ./Node.cpp
 ./myprogram
 
 

@@ -17,6 +17,7 @@ src/BytesArray.cpp
 src/CheckURL.cpp 
 src/HashFunction.cpp
 src/ICommand.cpp
+src/InputArr.cpp
 src/Node.cpp 
 src/URLList.cpp
 )
