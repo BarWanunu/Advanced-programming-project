@@ -10,6 +10,7 @@
 
 using namespace std;
 
+//constructor
 BloomPart::BloomPart(map<string, ICommand*> commands, int arr[])
         : commands(commands), arr(arr), bArr(arr[0]), hashFunc(arr[0], arr[1], arr[2]), urls(){}
 
@@ -17,10 +18,9 @@ void BloomPart::run(){
     string num;
     string url;
     string line;
-    //int size = arr[0];
 
+    // endless while loop to add/check url
     while(true){
-
         getline(cin,line);
         istringstream ss(line);
         ss >> num >> url;

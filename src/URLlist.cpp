@@ -9,6 +9,7 @@ URLlist::URLlist(){
     this->head = nullptr;
 }
 
+//adding the url address to the list
 void URLlist::insertAtBeginning(const string& url){
     Node* newNode = new Node(url);
     newNode->next = head;
@@ -23,6 +24,8 @@ void URLlist::display(){
         cout << endl;
     }
 }
+
+//checking if the url adress is in the list
 bool URLlist::contains(const string& url){
 
     Node* current = head;
