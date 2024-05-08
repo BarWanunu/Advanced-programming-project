@@ -43,7 +43,7 @@ void BloomPart::run(int client_sock) {
             istringstream ss(line);
             string num, url;
             ss >> num >> url;
-            // cout << "Received message from client: " << endl;
+            cout << "Received message from client: " << endl;
 
             if (num == "1" || num == "2") {
                         cout << "Received message from client: " << buffer << endl;
