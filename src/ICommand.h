@@ -9,7 +9,7 @@
 class ICommand {
 public:
     virtual void execute(BytesArray arr, URLlist* list, std::string url,
-                         HashFunction hash) = 0;
+                         HashFunction hash,int client_sock) = 0;
 };
 
 #endif // ICOMMAND_H

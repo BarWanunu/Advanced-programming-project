@@ -5,7 +5,7 @@ class InputArr {
 public :
     InputArr();
 
-    int* inputCheck();
+    int* inputCheck(int client_sock);
 
 };
 

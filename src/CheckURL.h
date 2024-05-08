@@ -11,7 +11,7 @@ class CheckURL : public ICommand {
 public:
     CheckURL();  // Constructor declaration
     void execute(BytesArray arr, URLlist* list, std::string url, HashFunction
-    hash) override;
+    hash, int client_sock) override;
 };
 
 #endif // CHECKURL_H
