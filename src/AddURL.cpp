@@ -8,7 +8,7 @@ AddURL::AddURL() {
 
 // Member function implementation
 void AddURL::execute(BytesArray arr, URLlist* list, std::string url,
-                     HashFunction hash, int client_sock) {
+                     HashFunction hash) {
     // insert the url to the url list
     list->insertAtBeginning(url);
 
