@@ -6,5 +6,5 @@
 using namespace std;
 
 void ICommand::execute(BytesArray arr, URLlist* list, std::string url,
-                       HashFunction hash, int client_sock) {
+                       HashFunction hash) {
 }

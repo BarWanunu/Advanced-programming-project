@@ -14,7 +14,7 @@ public:
 
     // Member function declaration
     void execute(BytesArray arr, URLlist* list, std::string url, HashFunction
-    hash,int client_sock);
+    hash);
 };
 
 #endif // ADDURL_H

@@ -16,9 +16,9 @@ private:
 
 public:
     BloomPart(map<string, ICommand*> commands, int arr[]); // Constructor declaration
-    void run(int client_sock);
-    void check(string url,int client_sock);
-    void add(string url,int client_sock);
+    void run();
+    void check(string url);
+    void add(string url);
     int numhashes();
     int numfunctions();
     int size();
