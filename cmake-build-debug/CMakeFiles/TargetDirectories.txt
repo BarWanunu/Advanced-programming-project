@@ -1,0 +1,7 @@
+/home/shaked/Documents/Advanced-programming-project/cmake-build-debug/CMakeFiles/UrlTest.dir
+/home/shaked/Documents/Advanced-programming-project/cmake-build-debug/CMakeFiles/BloomPartTest.dir
+/home/shaked/Documents/Advanced-programming-project/cmake-build-debug/CMakeFiles/HashFunctionTest.dir
+/home/shaked/Documents/Advanced-programming-project/cmake-build-debug/CMakeFiles/new_target.dir
+/home/shaked/Documents/Advanced-programming-project/cmake-build-debug/CMakeFiles/test.dir
+/home/shaked/Documents/Advanced-programming-project/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/shaked/Documents/Advanced-programming-project/cmake-build-debug/CMakeFiles/rebuild_cache.dir
