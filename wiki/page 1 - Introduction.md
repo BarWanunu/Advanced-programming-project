@@ -13,10 +13,10 @@ In the project we had 4 phases :
 This wiki folder will contain 4 parts. <br>
 First one, as you can see is the introduction. The second, will be about how to run the TCP server and the Node.js server. The third, will be about the web facbook app. And, the fourth, will be about the android fabook app. <br>.
 
-We will explain everything in here, including photos and videos and yet we still reccommend you to go and read the README for each part, so you'll also be able to see our work in progress.
+We will explain everything in here, including photos and videos and yet we still reccommend you to go and read the README for each part, so you'll also be able to see our work in progress. <br>
 
 ## Let's go check our Facebook!
 written and developed by : 
-Shaked Gitta
-Bar Wanunu
+Shaked Gitta <br>
+Bar Wanunu <br>
 Itay Chananel
