@@ -18,7 +18,7 @@ We will guide you with several steps in order to run the app on the web. <br>
 First, make sure you followed the previous steps of running the TCP server and Node Js server as required. <br>
 Afterwards, in the commnad line write the following 2 lines : . <br>
 1) npm install
-2) npm install mongodb
+2) npm install mongodb <br>
 Then, you can write npm start and start exploring our app the URL : http://localhost/80 <br>
 We hope you'll enjoy your experience !
 
@@ -60,3 +60,12 @@ On the top bottom of the right side you'll be able to see a log out button that 
 Moreover, you can see all of your friends. Whoever, is on your list you can press on their picture and decide if you want to see their friends or to remove them from your friends list. <Br>
 ![image](https://github.com/BarWanunu/Advanced-programming-project/assets/139462169/85cf23e8-2f7f-4601-befc-06ba05d2050e) <br>
 
+![image](https://github.com/BarWanunu/Advanced-programming-project/assets/139462169/c7ded9ec-fc25-441a-bd39-90bce5b01f7c) <br>
+
+About the posts in the Feed Page, each post has its own data: author, content, number of likes and comments, you can add like by presing the like button, you can add comments by pressing the comments button and right after to enter you comment and submit it. <br>
+you can also delete and edit your comment. <br>
+When you add a post the home page will get updated and your post will be added at the end of the page. <br> 
+You can not edit/delete post that is not your post, an appropriate message will be displayed. <br>
+
+## Important Thing when you ran the app
+In order, for the application to run successfully without sudden crushes, please make sure you don't upload any photo that has a size larger than 1023 KB either for profile image or for a post.
