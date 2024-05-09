@@ -29,7 +29,7 @@ open the terminal and run these:
 5. ./myprogram
 6. our program is now running on your computer!
 
-#Use the Docker to run:
+# Use the Docker to run:
 1. enter the terminal in the folder of this repo.
 2. run the following commands:
 3. sudo docker build -t myprogram .
