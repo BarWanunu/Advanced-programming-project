@@ -25,7 +25,7 @@ int *InputArr::inputCheck(int client_sock) {
         // Receive input from the server
         char buffer[4096];
         int read_bytes = recv(client_sock, buffer, sizeof(buffer), 0);
-            // cout << "Received message : " << buffer << endl;
+            cout << "Received message : " << buffer << endl;
         if (read_bytes <= 0) {
             // Error or connection closed, handle appropriately
             perror("error receiving input from server");
