@@ -84,7 +84,8 @@ If you'll enter your own profile you'll be able to edit or delete your posts. <b
 When entering to profile (even if it is your profile) you won't be able to edit your user details or delete your user, you can do that only from the home page.
 If you want to get back to the main feed please return from the android back button.
 
-About the posts in the Feed Page, each post has its own data: author, content, number of likes and comments, you can add like by presing the like button, you can add comments by pressing the comments button and right after to enter you comment and submit it. you can also delete and edit your comment.
+About the posts in the Feed Page, each post has its own data: author, content, number of likes and comments, you can add like by presing the like button, you can add comments by pressing the comments button and right after to enter you comment and submit it. <br>
+you can also delete and edit your comment. <br>
 When you add a post the home page will get updated and your post will be added at the end of the page. <br> 
 You can not edit/delete post that is not your post, an appropriate message will be displayed. <br>
 ![image](https://github.com/BarWanunu/Advanced-programming-project/assets/139462169/d38ad6e1-68ac-43c8-b10d-86e46a069bb7) <br>
