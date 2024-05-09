@@ -11,7 +11,7 @@ You can see the initialization of the bloom filter values and the invalid URL li
 when a user is uploading a post with a URL the node.js server sends the URL to the Bloom Filter to see if the URL is allowed, and gets a response from the TCP server with the relevant answer. if the url is not allowed the post will not be posted.
 
 
-#Before running:
+# Before running:
 You need to make sure you have a VS code Software that will help you run this code.
 You also need to make sure you have tools that are used to compile C++ programs.
 open the terminal and run these:
