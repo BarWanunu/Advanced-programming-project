@@ -17,9 +17,9 @@ Now let's strat the app ! <br>
 We will guide you with several steps in order to run the app on the web. <br>
 First, make sure you followed the previous steps of running the TCP server and Node Js server as required. <br>
 Afterwards, in the commnad line write the following 2 lines : . <br>
-1) npm install
+1) npm install <br>
 2) npm install mongodb <br>
-Then, you can write npm start and start exploring our app the URL : http://localhost/80 <br>
+Then, you can write npm start and start exploring our app the URL : http://localhost:80 <br>
 We hope you'll enjoy your experience !
 
 ## Login and Sign in
