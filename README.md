@@ -9,8 +9,7 @@ The TCP server is a multi-thread server whose purpose is to manage the bloom par
 the Node.js is sending a request for the TCP server, with the same protocols we decided on in the first parts.<br>
 You can see the initialization of the bloom filter values and the invalid URL list on the env file of the node.js server.<br>
 when a user is uploading a post with a URL the node.js server sends the URL to the Bloom Filter to see if the URL is allowed, and gets a response from the TCP server with the relevant answer. if the url is not allowed the post will not be posted.<br>
-
-![image](https://github.com/BarWanunu/Advanced-programming-project/assets/132774208/db00a1f9-adeb-445f-b240-d1cc976f59bd)
+![image](https://github.com/BarWanunu/Advanced-programming-project/assets/132774208/f75b057d-cd55-4589-a54a-e8493d8f34ce)
 
 # Before running:
 You need to make sure you have a VS code Software that will help you run this code.<br>
