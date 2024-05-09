@@ -11,7 +11,7 @@ In the project we had 4 phases :
 4) Building a TCP server aand connecting to the BloomPart, Node.js server and to both of the apps.
 
 This wiki folder will contain 4 parts. <br>
-First one, as you can see is the introduction. The second, will be about how to run the TCP server and the Node.js server. The third, will be about the web facbook app. And, the fourth, will be about the android fabook app. <br>.
+First one, as you can see is the introduction. The second, will be about how to run the TCP server and the Node.js server. The third, will be about the web facbook app. And, the fourth, will be about the android fabook app. <br>
 
 We will explain everything in here, including photos and videos and yet we still reccommend you to go and read the README for each part, so you'll also be able to see our work in progress. <br>
 
