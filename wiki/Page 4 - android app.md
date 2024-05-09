@@ -24,7 +24,7 @@ We hope you'll enjoy your experience !
 The first page you'll encounter after starting the app is the Sign in page. <br>
 In order to sign in to our facebook app you can take one of the users from the mongoDB or to create one for yourself. <br>
 If you want to make your own profile you can press the sign up button. <br>
-<img width="191" alt="image" src="https://github.com/BarWanunu/Advanced-programming-project/assets/139462169/34c623cf-f02e-440e-9fac-6feaabbc3e3b">
+<img width="191" alt="image" src="https://github.com/BarWanunu/Advanced-programming-project/assets/139462169/34c623cf-f02e-440e-9fac-6feaabbc3e3b"> <br>
 Afterwards, you'll be transferd to the sign up page where you'll need to fill the required fields. <br>
 <img width="191" alt="image" src="https://github.com/BarWanunu/Advanced-programming-project/assets/139462169/a7cac971-b2e9-4151-bcf3-67c5e7a18142">
 Be aware, you'll have to fill all of the fields in order to finish the form. <br>
