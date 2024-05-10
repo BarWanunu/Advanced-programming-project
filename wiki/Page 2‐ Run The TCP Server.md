@@ -39,6 +39,6 @@ https://github.com/BarWanunu/Advanced-programming-project/tree/ex4_branch
 3. sudo docker build -t myprogram .
 4. docker run -p 5555:5555 myprogram
 5. our program is now running on your computer!
-(there maybe a case when you try to run the serveer in second time and you will get an error from the run command, in this cade run this command:<br>
+6. (there maybe a case when you try to run the serveer in second time and you will get an error from the run command, in this cade run this command:<br>
 sudo systemctl restart docker <br>
 now try run again and it will work!)
