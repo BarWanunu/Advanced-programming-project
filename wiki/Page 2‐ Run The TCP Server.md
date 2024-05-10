@@ -1,15 +1,17 @@
 This page is referring to this Repository:https://github.com/BarWanunu/Advanced-programming-project/tree/ex4_branch
 
 ## About the TCP server and Bloom Filter.
-The Bloom Filter is an array that holds URLS, which are considered "invalid Urls". <br>
-When a user tries to publish a Post on Facebook with one of the URLs, he will get rejected.<br>
-The bloom filter works with a hash function that is in charge of the insertion and searching of URLs. <br>
-We developed the Bloom Filter in the first step of the project and updated it to work with the TCP server in the 4th part of the project.<br>
-The TCP server is a multi-thread server whose purpose is to manage the bloom part and communicate with the Node.js server that is in charge of all the Facebook apps.<br>
-the Node.js is sending a request for the TCP server, with the same protocols we decided on in the first parts.<br>
-You can see the initialization of the bloom filter values and the invalid URL list on the env file of the node.js server.<br>
-when a user is uploading a post with a URL the node.js server sends the URL to the Bloom Filter to see if the URL is allowed, and gets a response from the TCP server with the relevant answer. if the URL is not allowed the post will not be posted.<br>
-for example:
+ The Bloom Filter acts as an array housing URLs categorized as "invalid URLs." Upon a user's attempt to publish a post on Facebook containing one of these URLs, the post gets rejected.<br>
+ The Bloom Filter operates alongside a hash function responsible for URL insertion and retrieval.<br> 
+ Initially developed as the first part of the project, we later upgraded it to collaborate with the TCP server in the project's fourth phase.<br>
+
+The TCP server operates as a multi-threaded entity, managing the Bloom Filter's functionality and interfacing with the Node.js server, which oversees all Facebook applications. <br>
+Communication between the Node.js server and the TCP server follows predetermined protocols established in earlier project phases.<br>
+Initialization values for the Bloom Filter and the invalid URL list are configured in the Node.js server's environment file.
+
+When a user attempts to upload a post containing a URL, the Node.js server forwards the URL to the Bloom Filter to verify its legitimacy. Subsequently, the Node.js server receives a response from the TCP server, determining whether the URL is permissible. If deemed invalid, the post is withheld from publication.
+
+For operational clarity, refer to the provided screenshot:
 ![image](https://github.com/BarWanunu/Advanced-programming-project/assets/132774208/f75b057d-cd55-4589-a54a-e8493d8f34ce)
 
 # Before running:
